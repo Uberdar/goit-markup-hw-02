@@ -15,7 +15,7 @@
   --accent-txt-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
-  --footer-secondary-color: rgba(255, 255, 255, 0, 6);
+  --footer-secondary-color: rgba(255, 255, 255, 0.6);
   --bg-main-color: #2f303a;
 }
 
@@ -52,24 +52,18 @@ ul {
 .nav-unit a:focus {
   color: var(--accent-txt-color);
 }
-
-header .contact-tel {
+header ul{
+  font-weight: 500;
+}
+header .contact:hover,  
+header .contact:focus {
+  color: var(--accent-txt-color);
+}
+header .contact {
   color: var(--primary-txt-color);
   text-decoration: none;
 }
-header .contact-tel:hover,
-header .contact-tel:active {
-  color: var(--accent-txt-color);
-}
 
-header .contact-mail {
-  color: var(--primary-txt-color);
-  text-decoration: none;
-}
-header .contact-mail:hover,
-header .contact-mail:active {
-  color: var(--accent-txt-color);
-}
 
 /* header end */
 
@@ -92,6 +86,9 @@ header .contact-mail:active {
   color: var(--title-txt-color);
   font-family: inherit;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
 }
 .button:hover {
   color: var(--primary-white-color);
@@ -99,7 +96,8 @@ header .contact-mail:active {
 .main-button.button {
   color: var(--primary-white-color);
 }
-.main-button.button:hover {
+.main-button.button:hover,
+button:focus {
   color: var(--accent-txt-color);
 }
 
@@ -112,6 +110,11 @@ header .contact-mail:active {
   /* line height 42 / font size 36 = ~1.17 */
   line-height: 1.17;
   text-align: center;
+}
+
+.ocupation-title.title{
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .team .title {
@@ -145,31 +148,24 @@ footer .logo {
 }
 
 .footer-contacts {
-  line-height: 1.46;
+  line-height: 1.71;
 }
 .footer-contacts a {
   text-decoration: none;
 }
-
+address {
+  font-style: normal;
+}
 address .map-mark {
   color: var(--primary-white-color);
 }
 address .map-mark:hover,
-address .map-mark:focus{
+address .map-mark:focus,
+address .contact:hover,
+address .contact:focus{
     color: var(--accent-txt-color);
 }
-address .contact-tel {
-  color: var(--footer-secondary-color);
-}
-address .contact-tel:hover,
-address .contact-tel:focus{
-    color: var(--accent-txt-color);
-}
-address .contact-mail:hover,
-address .contact-mail:focus {
-    color: var(--accent-txt-color);
-}
-address .contact-mail {
+address .contact {
   color: var(--footer-secondary-color);
 }
 
@@ -177,10 +173,9 @@ address .contact-mail {
 
 /* portfolio */
 
-.list-unit h3 {
+.list-unit h2 {
   color: var(--title-txt-color);
   font-size: 18px;
-  font-style: 700;
   line-height: 1.71;
 }
 
