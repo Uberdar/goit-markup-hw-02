@@ -17,6 +17,7 @@
   --primary-black-color: #000000;
   --footer-secondary-color: rgba(255, 255, 255, 0.6);
   --bg-main-color: #2f303a;
+  --button-bg-color:#F5F4FA;
 }
 
 body {
@@ -64,6 +65,10 @@ header .contact {
   text-decoration: none;
 }
 
+.nav-unit .current{
+  color: var(--accent-txt-color);
+}
+
 
 /* header end */
 
@@ -81,6 +86,9 @@ header .contact {
 .main-header {
   text-align: center;
   color: var(--primary-white-color);
+  line-height: 1.36;
+  font-size: 44px;
+  font-weight: 900;
 }
 .button {
   color: var(--title-txt-color);
@@ -89,16 +97,21 @@ header .contact {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-bg-color);
 }
-.button:hover {
-  color: var(--primary-white-color);
-}
+
 .main-button.button {
-  color: var(--primary-white-color);
+  padding: 10px 32px;
 }
-.main-button.button:hover,
-button:focus {
-  color: var(--accent-txt-color);
+
+.main-button.button,
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-txt-color);
 }
 
 .text {
@@ -115,6 +128,7 @@ button:focus {
 .ocupation-title.title{
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .team .title {
